@@ -20,4 +20,4 @@ docker run -d -p9993:9993/udp -p127.0.0.1:3000:3000 \
     -v $PWD/zt1:/var/lib/zerotier-one \
     -v $PWD/bin/:/app/bin \
     --name $imageName --restart unless-stopped $imageName
-#docker cp zerotier-planet:/app/bin/planet /opt/planet
+docker cp zerotier-planet:/app/bin/planet ./planet
