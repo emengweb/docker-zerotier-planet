@@ -69,7 +69,7 @@ WARNING: Published ports are discarded when using host network mode
 
 
 ## 3.4 下载 `planet` 文件
-脚本运行完成后，会在 `./planet/` 目录下有个 `planet` 文件
+脚本运行完成后，会在 `./bin/` 目录下有个 `planet` 文件
 
 下载该文件以备用
 
