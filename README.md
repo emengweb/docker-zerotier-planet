@@ -29,7 +29,7 @@ Zerotier 在多设备之间建立了一个 `Peer to Peer VPN（P2PVPN）` 连接
   
 ## 3.2：下载项目源码
 ```
-git clone https://github.com/xubiaolin/docker-zerotier-planet.git
+git clone https://github.com/emengweb/docker-zerotier-planet.git
 ```
 ## 3.3：执行安装脚本
 进入项目目录
@@ -69,12 +69,12 @@ WARNING: Published ports are discarded when using host network mode
 
 
 ## 3.4 下载 `planet` 文件
-脚本运行完成后，会在 `/opt/` 目录下有个 `planet` 文件
+脚本运行完成后，会在 `./planet/` 目录下有个 `planet` 文件
 
 下载该文件以备用
 
 ## 3.5 新建网络
-访问 `http://ip:3443` 进入controller页面
+访问 `http://127.0.0.1:3443` 进入controller页面
 
 ![ui](asserts/ztncui.png)
 
