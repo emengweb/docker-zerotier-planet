@@ -18,5 +18,6 @@ for i in $(lsof -i:9993 -t);do kill -2 $i;done
 docker run -d -p9993:9993/udp -p127.0.0.1:3443:3443 \
     -v ./ztncui:/opt/key-networks/ztncui/etc \
     -v ./zt1:/var/lib/zerotier-one \
+    -v ./bin/:/app/bin/ \
     --name $imageName --restart unless-stopped $imageName
 docker cp zerotier-planet:/app/bin/planet ./planet/planet
