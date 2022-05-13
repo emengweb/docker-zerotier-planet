@@ -3,7 +3,7 @@ imageName="zerotier-planet"
 
 
 echo "清除原有内容"
-rm /opt/planet
+rm ./planet
 docker stop $imageName
 docker rm $imageName
 docker rmi $imageName
