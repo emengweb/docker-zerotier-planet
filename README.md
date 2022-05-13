@@ -24,7 +24,7 @@ Zerotier 在多设备之间建立了一个 `Peer to Peer VPN（P2PVPN）` 连接
 
 # 3：开始安装
 ##  3.1：准备条件
-- 具有公网 `ip` 的服务器（需要开放 3443/tcp 端口，9993/tcp 端口，9993/udp 端口）
+- 具有公网 `ip` 的服务器（需要开放 3000/tcp 端口，9993/tcp 端口，9993/udp 端口）
 - 安装 `docker`
   
 ## 3.2：下载项目源码
@@ -69,7 +69,7 @@ WARNING: Published ports are discarded when using host network mode
 
 
 ## 3.4 下载 `planet` 文件
-脚本运行完成后，会在 `./bin/` 目录下有个 `planet` 文件
+脚本运行完成后，会在 `./` 当前目录下有个 `planet` 文件
 
 下载该文件以备用
 
@@ -165,3 +165,5 @@ A：请检查防火墙设置，windows系统需要允许ICMP入站，linux同理
 ## 2. Q：IOS客户端怎么用？
 A：我也不知道
 
+## 3. Q: 如何停止服务
+  `docker stop zerotier-planet`
