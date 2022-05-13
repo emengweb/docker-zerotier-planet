@@ -27,7 +27,7 @@ cd /opt && git clone -v http://gh-proxy.markxu.vip/https://github.com/zerotier/Z
 cd /opt/ztncui/src 
 npm install 
 cp -pv ./etc/default.passwd ./etc/passwd
-echo 'HTTP_PORT=3443' >.env
+echo 'HTTP_PORT=3000' >.env
 echo 'NODE_ENV=production' >>.env
 echo 'HTTP_ALL_INTERFACES=true' >>.env
 
